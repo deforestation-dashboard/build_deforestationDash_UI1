@@ -1,0 +1,36 @@
+header
+{
+    nav
+    {
+        .center(20px);
+        display: flex;
+        color: @deforestation-dashboard-color-primary;
+        background-color: "#FFFFFF00";
+        justify-content: space-between;
+        align-items: center;
+        
+        .nav-item
+        {
+            &:hover
+            {
+                text-decoration: underline;
+            }
+        }
+        @media screen and (max-width: 600px) 
+        {
+            .nav-item
+            {
+                display:none;
+            }
+            .nav-item:first-child
+            {
+                display: inline-block;
+            }
+            .nav-item:last-child
+            {
+                display: flex;
+            }
+        }
+    }
+    
+}

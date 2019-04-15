@@ -1,0 +1,50 @@
+.main-content
+{
+    display: flex;
+    flex-direction: column;
+    .top-content
+    {
+        h1
+        {
+            width: 80%;
+        }
+    }
+    .content-item
+    {
+        .center(100px);
+        display: inherit;
+        flex-direction: column;
+
+        vertical-align: middle;
+        .content-box
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 100px;
+            .second-item
+            {
+                width: 30%;
+                height: 100%;   
+            }
+            .first-item
+            {
+                width: 60%;
+            }
+        }
+        .content-box:last-child
+        {
+            margin: 0;
+        }
+       
+    }
+    ul
+    {
+        list-style-type: none;
+    }
+    li
+    {
+        font-size: 24px;
+        margin: 40px 0;
+    }
+}
