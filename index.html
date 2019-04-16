@@ -6,15 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/index.css">
     <title>Deforestation</title>
+    <script defer="defer" src="./js/index.js"></script>
 </head>
 <div class="container">
 <header>
-    <nav class="nav-bar top-nav">
+    <nav class="nav-bar top-nav" id="nonselectable">
         <img class="logo nav-item" href="" src="img/Logo-130.png" height="30px" width="30px"/>
-        <a href="" class="nav-item">Step One</a>
-        <a href="" class="nav-item">Step Two</a>
-        <a href="" class="nav-item">Step Three</a>
-        <a href="" class="nav-item">Graph</a>
+        <a class="nav-item scroll-button" data-scrollpoint=1>Step One</a>
+        <a class="nav-item scroll-button" data-scrollpoint=2>Step Two</a>
+        <a class="nav-item scroll-button" data-scrollpoint=3>Step Three</a>
+        <a href="https://focused-edison-779938.netlify.com" target="tab" class="nav-item">Graph</a>
     </nav>
 </header>
 <body>
@@ -25,12 +26,12 @@
             <div class="content-item top-content">
                     <h1>SOME COOL TITLE ABOUT TREES COOL LIKE THAT</h1>
                     <h4>Some cool bi line that helps reinforce thie cool title</h4>
-                    <div class="button">Cool Graph Here</div>
+                    <div class="button" onclick="window.open(`https://focused-edison-779938.netlify.com`);" >Cool Graph Here</div>
             </div>
         </div>
-        <div class="content-item">
-            <h4>Step one</h4>
-            <div class="backgorund1">
+        <div class="background background1" data-scrollPoint=1>
+            <div class="content-item">
+                <h4>Step one</h4>
                 <div class="content-box">
                     <div class="first-item">
                         <h2>Point one</h2>
@@ -38,7 +39,7 @@
                     </div>
                     <img class="second-item" src="img/test.png" alt="">
                 </div>
-                <div class="content-box">
+                <div class="content-box" >
                     <div class="first-item">
                         <h2>Point two</h2>
                         <p>Vestibulum aliquam justo magna, id aliquam est ullamcorper et. Praesent volutpat lacinia mi et ultrices. Nulla ornare fringilla lacus, eget consectetur nunc varius ut. Aenean a odio ultricies massa viverra dignissim. Ut in libero a turpis pretium condimentum. Etiam quis dictum nisl. Donec eu dui feugiat, euismod risus vel, viverra lacus.</p>
@@ -53,8 +54,8 @@
                     <img class="second-item" src="img/test.png" alt="">
                 </div>
             </div>
-            </div>
-        <div class="background2">
+        </div>
+        <div class="background background2" data-scrollpoint=2>
             <div class="content-item">
                 <h4>Step Two</h4>
                 <div class="content-box">
@@ -68,7 +69,7 @@
                 </div>
             </div>
         </div>
-        <div class="background3"  id="alt-background">
+        <div class="background background3" data-scrollpoint=3  id="alt-background">
             <div class="background-img">
                 <div class="content-item">
                     <h4>Step three</h4>
@@ -90,12 +91,12 @@
 </body>
 <footer>
     <div>
-        <span class="logo-name"><img src="img/Logo-130.png" alt=""><h5>Deforestation</h5></span>
-        <nav class="nav-bar bottom-nav">
-            <a href="" class="nav-item">Step One</a>
-            <a href="" class="nav-item">Step Two</a>
-            <a href="" class="nav-item">Step Three</a>
-            <a href="" class="nav-item">Graph</a>
+        <span class="logo-name" id="nonselectable" onclick="window.scrollTo({top:0, left:0, behavior: 'smooth'});"><img src="img/Logo-130.png" alt=""><h5>Deforestation</h5></span>
+        <nav class="nav-bar bottom-nav" id="nonselectable">
+            <a class="nav-item scroll-button" data-scrollpoint=1>Step One</a>
+            <a class="nav-item scroll-button" data-scrollpoint=2>Step Two</a>
+            <a class="nav-item scroll-button" data-scrollpoint=3>Step Three</a>
+            <a href="https://focused-edison-779938.netlify.com" target="tab" class="nav-item">Graph</a>
         </nav>
     </div>
 </footer>

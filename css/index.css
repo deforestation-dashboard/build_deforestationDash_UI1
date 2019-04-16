@@ -261,15 +261,19 @@ footer div {
     margin: 50px 20px;
   }
 }
-footer .logo-name {
+footer div .logo-name {
   display: flex;
   align-items: flex-end;
-  font-size: 80px;
 }
-footer .logo-name img {
+footer div .logo-name img {
   width: 30px;
   height: 30px;
   margin-right: 10px;
+}
+footer div nav {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
 }
 html {
   background-color: #020515;
@@ -308,11 +312,29 @@ h6 {
   padding: 20px 20px;
   text-align: center;
   width: 30%;
+  cursor: auto;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .button:hover {
+  transition: all 0.75s linear;
   text-decoration: underline;
+  background-color: #ffffff22;
 }
 #alt-background {
   background-color: #ffffff;
   color: #020515;
+}
+#nonselectable {
+  cursor: auto;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
