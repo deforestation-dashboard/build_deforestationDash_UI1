@@ -385,6 +385,9 @@ footer div nav .nav-item:hover {
     display: block;
   }
 }
+.overlay-preload {
+  display: none;
+}
 .overlay {
   margin: 0 auto;
   height: 75%;

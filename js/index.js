@@ -12,7 +12,6 @@ class NavLink
     }
     selected()
     {
-        console.log("here");
         this.child.scrollIntoView({behavior: "smooth"});
     }
 }
@@ -22,10 +21,9 @@ class NavLink
  var overlay = document.querySelector(".overlay");
 document.querySelector(".close-button").addEventListener("click",toggleOverlay);
 var main = document.querySelector(".container");
-
+window.setTimeout(()=>overlay.classList.remove("overlay-preload"),20); //fix a weird glitch with transitions.
 function toggleOverlay()
 {
     overlay.classList.toggle("open-overlay");
     main.classList.toggle("close-container");
-    console.log("here");
 } 
