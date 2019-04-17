@@ -341,6 +341,12 @@ header nav .nav-item:hover {
 .content-item .content-box:last-child {
   margin: 0;
 }
+.content-item a {
+  color: #fdcb6e;
+}
+.content-item .highlight {
+  color: #72fac6;
+}
 ul {
   list-style-type: none;
 }
