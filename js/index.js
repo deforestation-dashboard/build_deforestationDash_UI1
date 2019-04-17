@@ -18,3 +18,14 @@ class NavLink
 }
 
 [...document.querySelectorAll("nav .scroll-button")].map(x=> new NavLink(x));
+
+ var overlay = document.querySelector(".overlay");
+document.querySelector(".close-button").addEventListener("click",toggleOverlay);
+var main = document.querySelector(".container");
+
+function toggleOverlay()
+{
+    overlay.classList.toggle("open-overlay");
+    main.classList.toggle("close-container");
+    console.log("here");
+} 
