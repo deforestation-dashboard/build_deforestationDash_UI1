@@ -5,9 +5,10 @@
 }
     .top-content
     {
-        h1
+        width: 90%;
+        @media screen and (max-width: 750px) 
         {
-            width: 80%;
+            width: 100%;
         }
     }
     .content-item
@@ -27,7 +28,7 @@
             }
             .second-item
             {
-                width: 30%;
+                width: 40%;
                 height: auto;
                 @media screen and (max-width: 750px) 
                 {
@@ -38,7 +39,7 @@
             }
             .first-item
             {
-                width: 60%;
+                width: 55%;
                 @media screen and (max-width: 750px) 
                 {
                     width: 100%;
@@ -53,19 +54,29 @@
         }
         a
         {
-            color: @deforestation-dashboard-color-gray-green
+            color: @deforestation-dashboard-color-orange;
+        }
+        .dark
+        {
+            color: @deforestation-dashboard-color-dark-orange;
         }
         .highlight
         {
+            font-weight: 550;
             color: @deforestation-dashboard-color-gray;
+        }
+        .highlight-dark
+        {
+            font-weight: 550;
+            color: @deforestation-dashboard-color-dark-green
         }
     }
     ul
     {
-        list-style-type: none;
+        list-style-type: square;
     }
     li
     {
-        font-size: 24px;
-        margin: 40px 0;
+        font-size: 20px;
+        margin: 20px 10px;
     }
