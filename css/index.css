@@ -245,6 +245,42 @@ header nav .nav-item:hover {
     background-color: blue;
   }
 }
+.top-nav {
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  transition: opacity 0.75s linear;
+}
+.sticky {
+  max-width: 980px;
+  margin: 20px auto;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000000AA;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  opacity: 1;
+}
+@media screen and (max-width: 1000px) {
+  .sticky {
+    max-width: 730px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .sticky {
+    max-width: 380px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .sticky {
+    max-width: auto;
+    margin: 20px 20px;
+  }
+}
 .main-content {
   display: flex;
   flex-direction: column;

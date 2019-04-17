@@ -26,4 +26,19 @@ function toggleOverlay()
 {
     overlay.classList.toggle("open-overlay");
     main.classList.toggle("close-container");
+    window.scrollTo();
 } 
+
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.querySelector(".top-nav");
+var sticky = document.querySelector(".background1").offsetTop-10;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
