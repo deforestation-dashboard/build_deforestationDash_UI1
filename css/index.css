@@ -364,7 +364,12 @@ header nav .nav-item:hover {
   color: #075353;
 }
 ul {
-  list-style-type: square;
+  list-style-type: none;
+}
+.fas {
+  width: 20px;
+  margin-right: 10px;
+  text-align: center;
 }
 li {
   font-size: 20px;
