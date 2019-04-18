@@ -47,10 +47,13 @@ header
 }
 .sticky
 {
-    display: flex;
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 0;
-    padding: 20px;
+    @media screen and (min-width: 400px)
+    {
+        display: flex;
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+        padding: 20px;
+    }
 }
