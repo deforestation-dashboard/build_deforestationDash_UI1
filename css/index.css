@@ -334,6 +334,7 @@ header nav .nav-item:hover {
     width: 100%;
     height: auto;
     margin: 0;
+    padding-top: 20px;
   }
 }
 .content-item .content-box .first-item {
@@ -343,7 +344,7 @@ header nav .nav-item:hover {
   .content-item .content-box .first-item {
     width: 100%;
     height: auto;
-    margin: 0;
+    margin: 0px;
   }
 }
 .content-item .content-box:last-child {
@@ -495,6 +496,11 @@ footer div nav .nav-item:hover {
     max-width: auto;
     margin: 0 20px;
   }
+}
+.overlay img {
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 20px;
 }
 .open-overlay {
   display: flex;

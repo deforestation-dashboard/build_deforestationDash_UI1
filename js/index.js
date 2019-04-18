@@ -21,7 +21,7 @@ class NavLink
  var overlay = document.querySelector(".overlay");
 document.querySelector(".close-button").addEventListener("click",toggleOverlay);
 var main = document.querySelector(".container");
-window.setTimeout(()=>overlay.classList.remove("overlay-preload"),20); //fix a weird glitch with transitions.
+window.setTimeout(()=>overlay.classList.remove("overlay-preload"),200); //fix a weird glitch with transitions.
 function toggleOverlay()
 {
     overlay.classList.toggle("open-overlay");
